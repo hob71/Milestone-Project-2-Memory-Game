@@ -1,0 +1,82 @@
+@font-family {
+    src: url("assets/fonts/harryp.ttf")
+}
+
+@font-family {
+    src: url("assets/fonts/lumos.ttf")
+}
+
+  /*  font-family: 'Caudex', serif;
+
+    font-family: 'Chelsea Market', cursive;  */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+/*--------------title-----------------------------------------------------------------*/
+
+.title {
+    font-family: 'harryp', 'Chelsea Market';
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 90px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.message {
+    font-family: 'lumos', 'Caudex';
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.info {
+    font-family: 'harryp', 'Chelsea Market';
+    font-size: 45px; 
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.start {
+    font-family: 'harryp', 'Chelsea Market';
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 45px;
+    padding-bottom: 20px;
+        text-align: center; 
+    vertical-align: middle;
+
+}
+
+.info.div {
+    text-align: center;
+}
+
+.backdrop > h1 {
+    text-align: center;
+}
+
+.backdrop > h3 {
+    text-align: center;
+}
+
+
+/*--------------colour-----------------------------------------------------------------*/
+.title, .start, .info {
+    color: #9c1203;
+}
+
+.message {
+    color: #e3a000;
+}
