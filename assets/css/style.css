@@ -73,8 +73,9 @@ body {
 /*--------------grid-----------------------------------------------------------------*/
 
 section.container {
-    margin: 30px;
+    margin: auto;
     padding: 100px;
+
 }
 
 #grid-area {
@@ -127,7 +128,7 @@ section.container {
 }
 
 
-.card:hover {
+.card.rotate {
     transform: rotateY(180deg);
 }
 
