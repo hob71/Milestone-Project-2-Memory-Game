@@ -11,14 +11,13 @@
     font-family: 'Chelsea Market', cursive;  */
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     height: 100vh;
 }
 
@@ -39,6 +38,7 @@ body {
     letter-spacing: 1px;
     font-size: 40px;
     padding-bottom: 20px;
+    text-align: center;
 }
 
 .info {
@@ -53,10 +53,9 @@ body {
     font-weight: 500;
     letter-spacing: 1px;
     font-size: 45px;
+    padding-top: 20px;
     padding-bottom: 20px;
-        text-align: center; 
-    vertical-align: middle;
-
+    justify-content: center;
 }
 
 .info.div {
@@ -70,6 +69,69 @@ body {
 .backdrop > h3 {
     text-align: center;
 }
+
+/*--------------grid-----------------------------------------------------------------*/
+
+section.container {
+    margin: 30px;
+    padding: 100px;
+}
+
+#grid-area {
+    display: inline-block;
+    justify-items: center;
+    margin: 90px;
+    perspective: 1000px;
+}
+
+.row-area {
+    justify-content: center;
+    display: flex;
+}
+
+.card {
+    position: relative;
+    height: 230px;
+    max-width: 170px;
+    transform-style: preserve-3d;
+    transition: 1.5s;
+    object-position: center;
+    padding: 0;
+    border: none;
+}
+
+.bcard {
+    position: absolute;
+    height: 95%;
+    width: 95%;
+    margin: auto;
+    border: 3px solid #9c1203;
+    background: url("../images/crest.jpg") center;
+    background-size: 50%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+}
+
+.fcard {
+    position: absolute;
+    height: 95%;
+    width: 95%;
+    margin: auto;
+    border: 3px solid #9c1203;
+   /*background: yellow;*/
+    background-size: 50%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    right: 0;
+}
+
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+
 
 
 /*--------------colour-----------------------------------------------------------------*/
