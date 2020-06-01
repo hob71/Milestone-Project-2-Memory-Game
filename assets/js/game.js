@@ -1,12 +1,7 @@
-/*function start() {
-    timer();
-    clickcounter();
-}*/
-
-
 
 
 /*timer - RhymBil (youtube)*/
+
 function timer(){
 var time = 90;
 var Countdown = setInterval (function() {
@@ -19,11 +14,18 @@ var Countdown = setInterval (function() {
 timer();
 
 /*clicker */
-
 var click = 0;
 function clickcounter() { 
     click = click +1;
-    document.getElementById("clicker").innerHTML = click;
+    document.getElementsByClassName("card").innerHTML = click;
 }
 
 
+/*rotate*/
+const cards = document.querySelectorAll(".card");
+
+function rotate() {
+    this.classList.toggle('rotate');
+}
+
+cards.forEach(card => card.addEventListener('click', rotate))
